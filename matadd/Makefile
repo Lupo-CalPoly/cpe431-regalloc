@@ -1,6 +1,6 @@
 CXX = g++
 CC = gcc
-CFLAGS = -O1
+CFLAGS = -O1 -g
 CXXSRCS = matadd-driver.cpp
 SSRCS = matadd.s
 OBJECTS = $(addprefix obj/, $(notdir $(CXXSRCS:.cpp=.o) $(SSRCS:.s=.o)))

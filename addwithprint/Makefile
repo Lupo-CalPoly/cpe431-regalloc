@@ -1,7 +1,7 @@
 CC = gcc
 AR = ar
 CFLAGS = -g -Wall -O1
-CSRCS = addwithprint.c 
+CSRCS = addwithprint.s 
 LIBSRCS = cpe431util.c 
 LIB = libcpe431util.a 
 BIN = addwithprint
@@ -17,7 +17,4 @@ $(LIB):
 	$(AR) rcs $(LIB) cpe431util.o
 
 clean:
-	rm -f *.o
-
-cleanall:
 	rm -f $(BIN) *.o *.a
